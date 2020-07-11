@@ -7,13 +7,21 @@ class MemeItem extends React.Component {
 
     postMeme() {
         const { top, bottom } = this.props;
-        const memeObj = {
-            template_id: this.props.meme.id,
-            text0: top,
-            text1: bottom,
+
+        if(top !== "" && bottom !== ""){
+            const memeObj = {
+                template_id: this.props.meme.id,
+                text0: top,
+                text1: bottom,
+            }
+    
+            this.props.createMeme(memeObj);
+        }else{
+            alert("los campos no pueden estar vacios");
         }
 
-        this.props.createMeme(memeObj);
+        return false;
+        
     }
 
     render() {
