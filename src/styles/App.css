@@ -1,0 +1,42 @@
+.meme-item {
+  text-align: left;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.meme-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  position: absolute;
+  object-fit: cover;
+  filter: brightness(90%); 
+}
+
+.meme-txt {
+  text-align: center;
+  position: absolute;
+  border-radius: 5px;
+  width: 150px;
+  bottom: 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.load-more-btn {
+  margin: 5% 0;
+  display: block;
+}
+
+.my-meme {
+  width: 220px;
+}
+
+.fixed {
+  position: fixed;
+}
